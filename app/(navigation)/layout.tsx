@@ -1,4 +1,10 @@
-import { Sidebar } from "@/modules/navigation";
+import {
+  SidebarProvider,
+  SidebarInset,
+  SidebarTrigger,
+} from "@/components/ui/sidebar";
+
+import { AppSidebar } from "@/modules/navigation";
 
 export default function DashboardLayout({
   children,
@@ -6,10 +12,10 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex min-h-screen">
-      <Sidebar />
-
-      <main className="flex-1">{children}</main>
-    </div>
+    <SidebarProvider>
+      <AppSidebar />
+      <SidebarTrigger size="icon-lg" />
+      <SidebarInset>{children}</SidebarInset>
+    </SidebarProvider>
   );
 }
