@@ -1,5 +1,6 @@
-import Sidebar from "./components/sidebar/Sidebar";
-import SidebarLogo from "./components/sidebar/SidebarLogo";
-import SidebarNav from "./components/sidebar/SidebarNav";
+import AppSidebar from "./components/sidebar/AppSidebar";
+import AppSidebarLogo from "./components/sidebar/AppSidebarLogo";
+import AppSidebarNav from "./components/sidebar/AppSidebarNav";
+import UserDropdown from "./components/sidebar/UserDropdown";
 
-export { Sidebar, SidebarLogo, SidebarNav };
+export { AppSidebar, AppSidebarLogo, AppSidebarNav, UserDropdown };
