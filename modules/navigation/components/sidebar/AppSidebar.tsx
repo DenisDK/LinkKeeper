@@ -179,6 +179,9 @@ const AppSidebar = () => {
       <SidebarFooter>
         <SidebarMenu>
           <SidebarMenuItem>
+            {/*
+              //TODO: maybe fix UserDropdown later
+              */}
             <UserDropdown />
           </SidebarMenuItem>
         </SidebarMenu>
