@@ -1,8 +1,9 @@
 import {
   SidebarProvider,
   SidebarInset,
-  SidebarTrigger,
+  // SidebarTrigger,
 } from "@/components/ui/sidebar";
+import { Header } from "@/modules/header";
 
 import { AppSidebar } from "@/modules/navigation";
 
@@ -14,8 +15,11 @@ export default function DashboardLayout({
   return (
     <SidebarProvider>
       <AppSidebar />
-      <SidebarTrigger size="icon-lg" />
-      <SidebarInset>{children}</SidebarInset>
+      {/* <SidebarTrigger size="icon-lg" /> */}
+      <SidebarInset>
+        <Header />
+        {children}
+      </SidebarInset>
     </SidebarProvider>
   );
 }
