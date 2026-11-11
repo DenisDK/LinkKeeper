@@ -66,6 +66,7 @@ const ThemeToggle = () => {
         size="icon-lg"
         onClick={toggleTheme}
         aria-label="Toggle theme"
+        className="dark:hover:bg-accent dark:hover:text-accent-foreground"
       >
         <FaRegMoon className="dark:hidden" />
         <LuSun className="hidden dark:block" />
