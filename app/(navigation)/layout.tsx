@@ -1,8 +1,5 @@
-import {
-  SidebarProvider,
-  SidebarInset,
-  // SidebarTrigger,
-} from "@/components/ui/sidebar";
+import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
+import { CreateEntryButton, CreateEntryDialog } from "@/modules/entries";
 import { Header } from "@/modules/header";
 
 import { AppSidebar } from "@/modules/navigation";
@@ -15,10 +12,11 @@ export default function DashboardLayout({
   return (
     <SidebarProvider>
       <AppSidebar />
-      {/* <SidebarTrigger size="icon-lg" /> */}
       <SidebarInset>
         <Header />
         {children}
+        <CreateEntryButton />
+        <CreateEntryDialog />
       </SidebarInset>
     </SidebarProvider>
   );
